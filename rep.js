@@ -32,17 +32,6 @@ var confirm_passeye=document.querySelector(".text");
 var confirm_pass_type=document.querySelector(".text");
 var confirm_set_pass=document.querySelector(".text");
 
-// var tick=document.querySelector(".agree span");
-// tick.addEventListener('click',function(){
-//     tick.classList.toggle('agree_green');
-// });
-
-// var tick_green=document.querySelector(".agree_submit span");
-// tick_green.addEventListener('click',function(){
-//     tick_green.classList.toggle('agree_submit_green');
-// });
-
-
 passeye.addEventListener('click',function(){
 
 if(pass_type.type=="password"){
@@ -71,24 +60,6 @@ confirm_set_pass.classList.add('fa-eye-slash');
 confirm_set_pass.classList.remove('fa-eye');
 }
 });
-
-//
-// var powerObject = {
-//     "Does not power ": { 
-//     },
-//     "Does not charge": {
-//     },
-//     "Short battery life": {
-//     }
-// }
-// window.onload = function () {
-//     var powerSel = document.getElementById("powerSel");
-
-//     for (var power in powerObject) {
-//         powerSel.options[powerSel.options.length] = new Option(power, power);
-//     }
-
-// }
 
 next_click.forEach(function(btn){
 btn.addEventListener('click',function(){
