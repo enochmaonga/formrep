@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="rep.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Safaricom Equipment Service Form</title>
+</head>
+<body>
+    <div class="container"> 
+        <div class="card"> 
+            <div class="saf">
+                <h5>Safaricom House, Waiyaki Way </p> P. O. Box 66827 00800 <p>Nairobi</p> </h5>
+                <img class="logo" src="safaricom logo.png">
+            </div> 
+            <div class="form"> 
+                <div class="left-side"> 
+                    <ul class="progres_bar"> 
+                        <li>Customer Details</li> 
+                        <li>Item Details</li> 
+                        <li>Fault Description</li> 
+                        <!-- <li>Repair Center Details</li>  -->
+                    </ul> 
+                </div>
+                <div class="right-side "> 
+                        <div class="main active"> 
+                            <div class="manage"> 
+                                <h3>Safaricom Aftersales Service Form</h3> 
+                                <p>Please fill in device details below</p> 
+                            </div> 
+                            <div class="input_div"> 
+                                <div class="input_text"> 
+                                    <input class="shop_nam" type="text" require required> 
+                                    <label>Retail Center Name</label> 
+                                </div> 
+                                <div class="input_text"> 
+                                    <input class="Shown_contact" type="number" required> 
+                                    <label>Retail Center contact</label> 
+                                </div> 
+                            </div> 
+                            <div class="input_div"> 
+                                <div class="input_text"> 
+                                    <input type="text" require required> 
+                                    <label>Item Make</label> 
+                                </div> 
+                                <div class="input_text"> 
+                                    <input type="text" require required> 
+                                    <label>Item Model</label> 
+                                </div> 
+                            </div> 
+                            <div class="input_div"> 
+                                <div class="input_text"> 
+                                    <input class="text" type="number" require required> 
+                                    <label>IMEI/Serial No</label> 
+                                    
+                                </div> 
+                                <div class="input_text"> 
+                                    <select name="optone" id="lmmSel" size="1">
+                                        <option value="" selected="selected">Is it a Lipa Mdogomdogo?</option>
+                                    </select>
+                                </div> 
+                            </div> 
+                            <div class="input_div"> 
+                                <div class="input_text"> 
+                                    <input class="text" type="text" require required> 
+                                    <label>Accompanying accessories  </label> 
+                                 
+                                </div> 
+                                <div class="input_text"> 
+                                    <input class="text" type="text" require required> <label> Is this repair a warranty claim?     </label> 
+                                    
+                                </div> 
+                            </div> 
+                            <!-- <div class="agree"> 
+                                <span><i class="fa fa-check"></i></span> 
+                                <p>I agree to the <a href="#"> Terms of Service</a>.</p> 
+                            </div>  -->
+                            <div class="button step_1"> <button class="next_btn">Next</button> 
+                            </div> 
+                        </div> 
+                        <div class="main"> 
+                            <div class="manage"> 
+                            <h3>Safaricom Aftersales Service Form</h3> 
+                            <p>Please fill in fault details below</p> 
+                        </div> 
+                        <div class="input_div"> 
+                            <div class="input_text"> 
+                                <p>Physical Condition</p>
+                                <select> <option>Physical Condition</option> 
+                                    <option>Scratches on body, Cracked screen protector</option> 
+                                    <option>Broken Screen, customer to pay</option> 
+                                    <option>In good condition</option> 
+                                    <option>Indication of liquid damage</option> 
+                                </select> 
+                            </div> 
+                            <div class="input_text"> 
+                                <p>Display</p>
+                                <select> <option>Display</option> 
+                                    <option>Ok</option> 
+                                    <option>No display</option> 
+                                    <option>Displays lines</option> 
+                                    <option>Touch does not work</option> 
+                                    <option>Broken screen</option> 
+                                </select> 
+                            </div> 
+                        </div> 
+
+                        <div class="input_div"> 
+                            <div class="input_text"> 
+                                <P>Power</P>
+                                <select> <option>Power</option> 
+                                    <option>Ok</option> 
+                                    <option>Does not power on</option> 
+                                    <option>Does not charge</option> 
+                                    <option>Short battery life</option> 
+                                    <option>Turns on and off</option> 
+                                </select> 
+                            </div> 
+                            <div class="input_text"> 
+                                <P>Speaker</P>
+                                <select> <option>Speaker</option> 
+                                    <option>Ok</option> 
+                                    <option>No Sound</option> 
+                                    <option>Cracking sound</option> 
+                                    <option>Works only on Loudspeaker</option> 
+                                    <option>Mic/ mouthpieace not working</option> 
+                                </select> 
+                            </div> 
+                        </div> 
+                            <!-- //newtwork -->
+                            <div class="input_div"> 
+                                <div class="input_text"> 
+                                    <P>Network Issues</P>
+                                    <select> <option>Network</option> 
+                                        <option>Ok</option> 
+                                        <option>No Mobile network</option> 
+                                        <option>Cannot connect to wifi</option> 
+                                        <option>Call Drops</option> 
+                                        <option>Cannot make a call</option> 
+                                    </select> 
+                                </div> 
+                                <div class="input_text"> 
+                                    <P>Software related issues</P>
+                                    <select> <option>Software</option> 
+                                        <option>Ok</option> 
+                                        <option>Very slow/hanging</option> 
+                                        <option>Error warning</option> 
+                                        <option>Crashing/goes staright off</option> 
+                                    </select> 
+                                </div> 
+                            </div> 
+                        <div class="input_div"> 
+                            <div class="input_text"> 
+                                <p>Physical/Liquid Damage</p>
+                                <select> <option>physicalDamage</option> 
+                                    <option>none</option> 
+                                    <option>Damaged side keys</option> 
+                                    <option>Craked screen</option> 
+                                    <option>Cracked  body cover/camera</option> 
+                                    <option>Liquid damage</option> 
+                                </select> 
+                            </div> 
+                            <div class="input_text"> 
+                                <p>Other Faults description</p>
+                                <input type="text" require required> 
+                                <label></label> 
+                            </div> 
+                        </div>
+                        <div class="button step_2 m_top"> 
+                            <button class="prev_btn">Previous</button> 
+                            <button class="next_btn">Next</button> 
+                        </div> </div> <div class="main "> 
+                            <div class="manage"> 
+                                <h3>Safaricom Aftersales Service Form</h3> 
+                                <p>Please fill in customer details below</p> 
+                            </div> 
+                            <div class="input_div"> 
+                                <div class="input_text"> 
+                                    <input type="text" require required> 
+                                    <label>Standby unit issued</label> 
+                                </div> 
+
+                                <div class="input_text"> 
+                                    <input type="number" require required> 
+                                    <label>IMEI/SERIAL for Standby unit</label> 
+                                </div> 
+
+                            </div> 
+                            <div class="input_div"> 
+                                <div class="input_text"> 
+                                    <input class="name"type="text" required> 
+                                    <label>Customer Name</label> 
+                                </div> 
+                                <div class="input_text"> 
+                                    <input type="number" require required> 
+                                    <label>Phone Number</label> 
+                                </div> 
+                            </div> 
+
+                            <div class="input_div"> 
+                                <div class="input_text"> 
+                                    <input type="text" require required> 
+                                    <label>Alternative Contact</label> 
+                                </div>
+                                <div class="input_text"> 
+                                    <input type="text" require required> 
+                                    <label>Repair Center</label> 
+                                </div> 
+                            </div>
+
+                            <div class="input_div"> 
+                                <div class="input_text"> 
+                                    <input class="written_name"type="text" required>
+                                    <label>Staff Name</label> 
+                                </div> 
+                                <div class="input_text"> 
+                                    <input type="text" require required> 
+                                    <label>Shop Stamp and Date</label> 
+                                </div> 
+                            </div> 
+
+                            <div class="button step_2 step_4"> 
+                                <button class="prev_btn">Previous</button> 
+                                <button class="sbmt_btn">Submit</button> 
+                            </div> 
+
+                       <div class="main "> 
+                                <div class="manage"> 
+                                    <h3>Congratulations <span class="shown_name"></span></h3> 
+                                    <p>Form has been successfully submitted</p> 
+                                </div> 
+                                <!-- <div class="manage"> 
+                                    <h3>For any querries, you can reach u on <span class="shown_contact"></span></h3> 
+                                </div>  -->
+                                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> 
+                                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" /> 
+                                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" /> 
+                                </svg> 
+                              
+
+                            <!-- <div class="button step_2 step_3"> 
+                                <button class="prev_btn">Previous</button> 
+                                <button class="next_btn">Next</button> 
+                            </div>  -->
+                        </div> 
+
+                        <!-- <div class="main "> 
+                            <div class="manage"> <h3>Safaricom Aftersales Service Form</h3> 
+                                <p>The form is now ready to submit</p> 
+                           
+                            </div> 
+                            <div class="button step_2 step_4"> 
+                                <button class="prev_btn">Previous</button> 
+                                <button class="sbmt_btn">Submit</button> 
+                            </div> 
+                        </div> 
+                        <div class="main "> 
+                            <div class="manage"> 
+                                <h3>Congratulations <span class="shown_name"></span></h3> 
+                                <p>Form has been successfully submitted</p> 
+                            </div>  -->
+                            <!-- <div class="manage"> 
+                                <h3>For any querries, you can reach u on <span class="shown_contact"></span></h3> 
+                            </div>  -->
+                            <!-- <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> 
+                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" /> 
+                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" /> 
+                            </svg> 
+                           -->
+                            <!-- <div class="h4_txt"> 
+                                <h4>For further querries you can contact us on<span class="shown_contact"></span> Zuri, or call 100/200</h4>  -->
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div>
+</div>
+        <script src="rep.js"></script>
+</body>
+</html>
