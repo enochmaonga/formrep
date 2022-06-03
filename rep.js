@@ -6,77 +6,61 @@ var p_bar =document.querySelectorAll(".progres_bar li");
 var written_name=document.querySelector(".written_name");
 var shown_name=document.querySelector(".shown_name");
 var shown_contact=document.querySelector(".shown_contact");
+let navigation = document.querySelectorAll(".button")[0];
 
 let formnumber=0;
+let formLength = main_page.length
 
-var lmmObject = {
-    "Yes": { 
-    },
-    "No": {
-    }
+console.log(formLength)
+
+
+
+
+
+
+if(formnumber==0){
+    navigation.children[0].style.display="none"
 }
-window.onload = function () {
-    var lmmSel = document.getElementById("lmmSel");
-
-    for (var lmm in lmmObject) {
-        lmmSel.options[lmmSel.options.length] = new Option(lmm, lmm);
-    }
-
-}
-
-var passeye=document.querySelector(".text");
-var pass_type=document.querySelector(".text");
-var set_pass=document.querySelector(".text");
-
-var confirm_passeye=document.querySelector(".text");
-var confirm_pass_type=document.querySelector(".text");
-var confirm_set_pass=document.querySelector(".text");
-
-passeye.addEventListener('click',function(){
-
-if(pass_type.type=="password"){
-pass_type.type="text";
-set_pass.classList.remove('fa-eye-slash');
-set_pass.classList.add('fa-eye');
-}
-else{
-pass_type.type="password";
-set_pass.classList.add('fa-eye-slash');
-set_pass.classList.remove('fa-eye');
-}
-});
-
-
-confirm_passeye.addEventListener('click',function(){
-
-if(confirm_pass_type.type=="password"){
-confirm_pass_type.type="text";
-confirm_set_pass.classList.remove('fa-eye-slash');
-confirm_set_pass.classList.add('fa-eye');
-}
-else{
-confirm_pass_type.type="password";
-confirm_set_pass.classList.add('fa-eye-slash');
-confirm_set_pass.classList.remove('fa-eye');
-}
-});
 
 next_click.forEach(function(btn){
 btn.addEventListener('click',function(){
-if(!validate_form()){
-return false;
-}
-formnumber++;
-update_form();
-progress_forward();
+ 
+
+    if(formnumber<formLength){
+        formnumber++;
+        if(formnumber>0){
+            navigation.children[0].style.display="inline-block"
+        
+        }
+    }
+
+    if(formnumber==formLength-1){
+
+        navigation.children[1].innerHTML="Finish"
+
+    }
+    update_form();
+    progress_forward();
 });
 });
 
 prev_click.forEach(function(btn){
 btn.addEventListener('click',function(){
-formnumber--;
-update_form();
-progress_backward();
+
+    if(formnumber>0){
+        formnumber--
+        navigation.children[0].style.display="inline-block"
+        navigation.children[1].innerHTML="Next"
+    }
+
+
+    if(formnumber==0){
+    navigation.children[0].style.display="none"
+    }
+
+
+    update_form();
+    progress_backward();
 });
 });
 
@@ -87,9 +71,7 @@ progress_backward();
 
 sbmt_click.forEach(function(btn){
 btn.addEventListener('click',function(){
-if(!validate_form()){
-return false;
-}
+
 formnumber++;
 update_form();
 shown_name.innerHTML=written_name.value;

@@ -13,231 +13,284 @@
     <div class="container"> 
         <div class="card"> 
             <div class="saf">
-                <h5>Safaricom House, Waiyaki Way </p> P. O. Box 66827 00800 <p>Nairobi</p> </h5>
-                <img class="logo" src="safaricom logo.png">
+                
             </div> 
             <div class="form"> 
                 <div class="left-side"> 
                     <ul class="progres_bar"> 
-                        <li>Customer Details</li> 
-                        <li>Item Details</li> 
-                        <li>Fault Description</li> 
-                        <!-- <li>Repair Center Details</li>  -->
+                        <li class="active">Customer Details</li> 
+                        <li>Device Details</li> 
+                        <li>Fault Description</li>
+                        <li>StandBy Device</li>
+                        <li>Retail Center Details</li> 
+                        <li>Repair Center Details</li>
                     </ul> 
                 </div>
                 <div class="right-side "> 
-                        <div class="main active"> 
-                            <div class="manage"> 
-                                <h3>Safaricom Aftersales Service Form</h3> 
-                                <p>Please fill in device details below</p> 
-                            </div> 
-                            <div class="input_div"> 
-                                <div class="input_text"> 
-                                    <input class="shop_nam" type="text" require required> 
-                                    <label>Retail Center Name</label> 
-                                </div> 
-                                <div class="input_text"> 
-                                    <input class="Shown_contact" type="number" required> 
-                                    <label>Retail Center contact</label> 
-                                </div> 
-                            </div> 
-                            <div class="input_div"> 
-                                <div class="input_text"> 
-                                    <input type="text" require required> 
-                                    <label>Item Make</label> 
-                                </div> 
-                                <div class="input_text"> 
-                                    <input type="text" require required> 
-                                    <label>Item Model</label> 
-                                </div> 
-                            </div> 
-                            <div class="input_div"> 
-                                <div class="input_text"> 
-                                    <input class="text" type="number" require required> 
-                                    <label>IMEI/Serial No</label> 
-                                    
-                                </div> 
-                                <div class="input_text"> 
-                                    <select name="optone" id="lmmSel" size="1">
-                                        <option value="" selected="selected">Is it a Lipa Mdogomdogo?</option>
-                                    </select>
-                                </div> 
-                            </div> 
-                            <div class="input_div"> 
-                                <div class="input_text"> 
-                                    <input class="text" type="text" require required> 
-                                    <label>Accompanying accessories  </label> 
-                                 
-                                </div> 
-                                <div class="input_text"> 
-                                    <input class="text" type="text" require required> <label> Is this repair a warranty claim?     </label> 
-                                    
-                                </div> 
-                            </div> 
-                            <!-- <div class="agree"> 
-                                <span><i class="fa fa-check"></i></span> 
-                                <p>I agree to the <a href="#"> Terms of Service</a>.</p> 
-                            </div>  -->
-                            <div class="button step_1"> <button class="next_btn">Next</button> 
-                            </div> 
-                        </div> 
-                        <div class="main"> 
-                            <div class="manage"> 
-                            <h3>Safaricom Aftersales Service Form</h3> 
-                            <p>Please fill in fault details below</p> 
-                        </div> 
-                        <div class="input_div"> 
-                            <div class="input_text"> 
-                                <p>Physical Condition</p>
-                                <select> <option>Physical Condition</option> 
-                                    <option>Scratches on body, Cracked screen protector</option> 
-                                    <option>Broken Screen, customer to pay</option> 
-                                    <option>In good condition</option> 
-                                    <option>Indication of liquid damage</option> 
-                                </select> 
-                            </div> 
-                            <div class="input_text"> 
-                                <p>Display</p>
-                                <select> <option>Display</option> 
-                                    <option>Ok</option> 
-                                    <option>No display</option> 
-                                    <option>Displays lines</option> 
-                                    <option>Touch does not work</option> 
-                                    <option>Broken screen</option> 
-                                </select> 
-                            </div> 
-                        </div> 
-
-                        <div class="input_div"> 
-                            <div class="input_text"> 
-                                <P>Power</P>
-                                <select> <option>Power</option> 
-                                    <option>Ok</option> 
-                                    <option>Does not power on</option> 
-                                    <option>Does not charge</option> 
-                                    <option>Short battery life</option> 
-                                    <option>Turns on and off</option> 
-                                </select> 
-                            </div> 
-                            <div class="input_text"> 
-                                <P>Speaker</P>
-                                <select> <option>Speaker</option> 
-                                    <option>Ok</option> 
-                                    <option>No Sound</option> 
-                                    <option>Cracking sound</option> 
-                                    <option>Works only on Loudspeaker</option> 
-                                    <option>Mic/ mouthpieace not working</option> 
-                                </select> 
-                            </div> 
-                        </div> 
-                            <!-- //newtwork -->
-                            <div class="input_div"> 
-                                <div class="input_text"> 
-                                    <P>Network Issues</P>
-                                    <select> <option>Network</option> 
-                                        <option>Ok</option> 
-                                        <option>No Mobile network</option> 
-                                        <option>Cannot connect to wifi</option> 
-                                        <option>Call Drops</option> 
-                                        <option>Cannot make a call</option> 
-                                    </select> 
-                                </div> 
-                                <div class="input_text"> 
-                                    <P>Software related issues</P>
-                                    <select> <option>Software</option> 
-                                        <option>Ok</option> 
-                                        <option>Very slow/hanging</option> 
-                                        <option>Error warning</option> 
-                                        <option>Crashing/goes staright off</option> 
-                                    </select> 
-                                </div> 
-                            </div> 
-                        <div class="input_div"> 
-                            <div class="input_text"> 
-                                <p>Physical/Liquid Damage</p>
-                                <select> <option>physicalDamage</option> 
-                                    <option>none</option> 
-                                    <option>Damaged side keys</option> 
-                                    <option>Craked screen</option> 
-                                    <option>Cracked  body cover/camera</option> 
-                                    <option>Liquid damage</option> 
-                                </select> 
-                            </div> 
-                            <div class="input_text"> 
-                                <p>Other Faults description</p>
-                                <input type="text" require required> 
-                                <label></label> 
-                            </div> 
+                        <div class="main active">
+                            <fieldset>
+                                <legend>Customer Details</legend>
+                                    <div >
+                                        <div class="input_text">
+                                            <label for="name">Name</label> 
+                                            <input  type="text"  name="Name"  id="customerName"/>
+                                        </div>
+                                        <div class="input_text">
+                                            <label for="phone">Phone</label> 
+                                            <input  type="text"  name="phone"  id="phone"/>
+                                        </div>
+                                        <div class="input_text">
+                                            <label for="email">email</label> 
+                                            <input  type="text"  name="email"  id="email"/>
+                                        </div>
+                                        <div class="input_text">
+                                            <label for="nationalID">National ID</label> 
+                                            <input  type="text"  name="national_id"  id="nationalID"/>
+                                        </div>       
+                                        <div class="input_text">
+                                            <label for="customerAltPhone">Alternative Phone</label> 
+                                            <input  type="text"  name="customer-altPhone"  id="customerAltPhone"/>
+                                        </div>
+                                    </div>
+                            </fieldset>
                         </div>
-                        <div class="button step_2 m_top"> 
-                            <button class="prev_btn">Previous</button> 
-                            <button class="next_btn">Next</button> 
-                        </div> </div> <div class="main "> 
-                            <div class="manage"> 
-                                <h3>Safaricom Aftersales Service Form</h3> 
-                                <p>Please fill in customer details below</p> 
-                            </div> 
-                            <div class="input_div"> 
-                                <div class="input_text"> 
-                                    <input type="text" require required> 
-                                    <label>Standby unit issued</label> 
-                                </div> 
 
-                                <div class="input_text"> 
-                                    <input type="number" require required> 
-                                    <label>IMEI/SERIAL for Standby unit</label> 
-                                </div> 
+                        <div class="main"> 
 
-                            </div> 
-                            <div class="input_div"> 
-                                <div class="input_text"> 
-                                    <input class="name"type="text" required> 
-                                    <label>Customer Name</label> 
-                                </div> 
-                                <div class="input_text"> 
-                                    <input type="number" require required> 
-                                    <label>Phone Number</label> 
-                                </div> 
-                            </div> 
-
-                            <div class="input_div"> 
-                                <div class="input_text"> 
-                                    <input type="text" require required> 
-                                    <label>Alternative Contact</label> 
+                            
+                            <fieldset>
+                                <legend>Device Details</legend>
+                                <div>
+                                    <div class="input_text">
+                                        <label for="brand">Brand</label> 
+                                        <input type="text" name="brand" id="brand" />
+                                    </div>
+                            
+                                    <div class="input_text">
+                                        <label for="model">Model</label> 
+                                        <input type="text" name="model" id="model" />
+                                    </div>
+                            
+                                    <div class="input_text">
+                                        <label for="serial">Serial/IMEI</label> 
+                                        <input type="text" name="serial" id="serial" />
+                                    </div>
+                            
+                                    <div class="input_text">
+                                        <label for="receipt">Receipt</label> 
+                                        <input type="text" name="receipt" id="receipt"  />
+                                    </div>
+                            
+                                    <fieldset>
+                                        <legend>Accessories</legend>
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <label for="battery">Battery</label>
+                                                    <input type="checkbox" id="battery" name="battery" value="true"/>
+                                                </li>
+                                                <li>
+                                                    <label for="charger">Charger</label>
+                                                    <input type="checkbox" id="charger" name="charger" value="true"/>
+                                                </li>
+                                            </ul> 
+                                        </div>
+                                    </fieldset>
+                            
+                                    <div>
+                                        <label for="lipaMdogoMdogo">Lipa Mdogomdogo</label>
+                                        <input type="checkbox"  name="lipaMdogoMdogo" id="lipaMdogoMdogo" value="true"/>
+                                    </div>
+                            
+                                    <div >
+                                        <label>Warranty</label>
+                                        <input type="checkbox"  name="warranty" id="warranty" value="true"/>
+                                    </div>
+                            
+                                    <div>
+                                        <label>Repair History</label>
+                                        <input type="checkbox"  name="repairHistory" id="repairHistory" value="true"/>
+                                    </div>
+                                                
                                 </div>
-                                <div class="input_text"> 
-                                    <input type="text" require required> 
-                                    <label>Repair Center</label> 
-                                </div> 
-                            </div>
-
-                            <div class="input_div"> 
-                                <div class="input_text"> 
-                                    <input class="written_name"type="text" required>
-                                    <label>Staff Name</label> 
-                                </div> 
-                                <div class="input_text"> 
-                                    <input type="text" require required> 
-                                    <label>Shop Stamp and Date</label> 
-                                </div> 
-                            </div> 
-
-                            <div class="button step_2 step_3"> 
-                                <button class="prev_btn">Previous</button> 
-                                <button class="next_btn">Next</button> 
-                            </div> 
-                        </div> 
+                            </fieldset>
+                        
+                        </div>                   
+                    
+                        <div class="main "> 
+                            
+                            <fieldset id="Issue">
+                                <legend>Device Faults</legend>               
+                                <fieldset id="display">
+                                    <legend>Display</legend>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <label>Cracked</label>
+                                                <input type="checkbox"  name="cracked" class="display" id="cracked" value="true"/>
+                                            </li>
+                                            <li>
+                                                <label>Not Powering Up</label>
+                                                <input type="checkbox"  name="notWorking" class="display" id="notWorking" value="true" />      
+                                            </li>
+                                            <li>
+                                                    <label>No Touch</label>
+                                                    <input type="checkbox"  name="noTouch" class="display"  id="noTouch" value="true"/>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </fieldset>
+                                <fieldset id="power">
+                                    <legend>Power</legend>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <label>Not Powering Up</label>
+                                                <input type="checkbox"  name="notPoweringUp" class="power" id="notPoweringUp" value="true"/>
+                                            </li>
+                                            <li>
+                                                <label>Short Battery Life</label>
+                                                <input type="checkbox"  name="shortBatteryLife" class="power" id="shortBatteryLife" value="true"/>   
+                                            </li>
+                                            <li>
+                                                <label>Not Charging</label>
+                                                <input type="checkbox"  name="notCharging" class="power" id="notCharging" value="true"/>
+                                            </li>
+                                        </ul>  
+                                    </div>
+                            
+                                </fieldset>
+                                <fieldset id="speaker">
+                                    <legend>Speaker</legend>
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <label for="noSound">No Sound</label>
+                                                    <input type="checkbox"  name="noSound" class="speaker" id="noSound" value="true"/>
+                                                </li>
+                                                <li>
+                                                    <label for="distortedSound">Distorted Sound</label>
+                                                    <input type="checkbox"  name="distortedSound" class="speaker" id="distortedSound" value="true"/>  
+                                                </li>
+                                                <li>
+                                                    <label for="notRinging">Not Ringing</label>
+                                                    <input type="checkbox"  name="notRinging" class="speaker" id="notRinging" value="true"/>  
+                                                </li>
+                                                </ul>
+                                        </div>                         
+                                </fieldset>
+                            
+                                <fieldset id="network">
+                                    <legend>Network</legend>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <label for="noMobileNetwork">No Mobile Network</label>
+                                                <input type="checkbox"  name="noMobileNetwork" class="network" id="noMobileNetwork" value="true"/>
+                                            </li>
+                                            <li>
+                                                <label for="noWifiNetwork">No Wifi</label>
+                                                <input type="checkbox"  name="noWifiNetwork" class="network" id="noWifiNetwork" value="true"/>  
+                                            </li>
+                                            <li>
+                                                <label for="droppedCalls">Dropping Calls</label>
+                                                <input type="checkbox"  name="droppedCalls" class="network" id="droppedCalls" value="true"/>  
+                                            </li>
+                                            <li>
+                                                <label for="unableToCall">Unable to make calls</label>
+                                                <input type="checkbox"  name="unableToCall" class="network" id="unableToCall" value="true"/>  
+                                            </li>
+                                        </ul> 
+                                    </div>
+                                                        
+                                </fieldset>
+                            
+                                <fieldset id="physicalDamage">
+                                    <legend>Physical Damage</legend>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <label for="faultyKeys">Faulty keys</label>
+                                                <input type="checkbox"  name="faultyKeys" class="physicalDamage" id="faultyKeys" value="true"/> 
+                                            </li>
+                                            <li>
+                                                <label for="crackedBody">Cracked Body</label>
+                                                <input type="checkbox"  name="crackedBody" class="physicalDamage" id="crackedBody" value="true"/> 
+                                            </li>
+                                        </ul>
+                                    </div>                    
+                                </fieldset>
+                            
+                                <fieldset id="Software">
+                                    <legend>Software</legend>
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <label for="slow" >Slow</label>
+                                                    <input type="checkbox"  name="slow" class="software" id="slow" value="true"/> 
+                                                </li>
+                                                <li>
+                                                    <label for="crashing">Crashing</label>
+                                                    <input type="checkbox"  name="crashing" class="software" id="crashing" value="true"/> 
+                                                </li>
+                                                <li>
+                                                    <label for="hanging">Hanging</label>
+                                                    <input type="checkbox"  name="hanging" class="software"  id="hanging" value="true"/> 
+                                                </li>
+                                            </ul>
+                                        </div>                 
+                                </fieldset>
+                            </fieldset>
+                        </div>
+                    
+                        <div class="main "> 
+                            <fieldset>
+                                <legend>Stand By Unit</legend>
+                                <div>
+                                    <label>StandBy Unit issued</label>
+                                    <input type="checkbox"  name="standByUnit" id="standByUnit" value="true"/>
+                                </div>
+                                               
+                                <fieldset>
+                                    <legend>Stand by unit details</legend>
+                                    <div class="input_text">
+                                        <label>Brand</label>
+                                        <input type="text"  name="standByUnitBrand" id="standByUnitBrand"/>
+                                    </div>
+                                    <div class="input_text">
+                                        <label>Model</label>
+                                        <input type="text"  name="standByUnitSerial" id="standByUnitSerial" />
+                                    </div>
+                                </fieldset>
+                            </fieldset>
+                        </div>
 
                         <div class="main "> 
-                            <div class="manage"> <h3>Safaricom Aftersales Service Form</h3> 
-                                <p>The form is now ready for you to submit or you can go back to review</p> 
-                           
-                            </div> 
-                            <div class="button step_2 step_4"> 
-                                <button class="prev_btn">Previous</button> 
-                                <button class="sbmt_btn">Submit</button> 
-                            </div> 
-                        </div> 
+                            <fieldset>         
+                                <legend>Repair Center Details</legend>         
+                                <div>
+                                    <label for="repair_center">Repair Center</label> 
+                                    <select name="repair_center" placeholder="Rpair Center Name" id="repair_center">
+                                        <option value="Nokia">Nokia</option>
+                                        <option value="Samsung">Samsung</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                        </div>  
+
+                        <div class="main "> 
+                            <fieldset>   
+                                <legend>Retail Center Details</legend>
+                                <div>
+                                    <label for="retail_center">Retail Center</label> 
+                                    <select name="retail_center" placeholder="Retail Center Name" id="retail_center">
+                                        <option value="JKIA">JKIA</option>
+                                        <option value="Sarit">Sarit</option>
+                                    </select>
+                                </div>              
+                            </fieldset>
+                        </div>
+
                         <div class="main "> 
                             <div class="manage"> 
                                 <h3>Congratulations <span class="shown_name"></span></h3> 
@@ -247,12 +300,17 @@
                                 <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" /> 
                                 <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" /> 
                             </svg> 
-                            </div> 
+                            
+                        </div>
+                        
+                        <div class="button step_2 step_3"> 
+                            <button class="prev_btn">Previous</button> 
+                            <button class="next_btn">Next</button> 
                         </div> 
-                    </div> 
+                    
                 </div> 
             </div>
-</div>
+    </div>
         <script src="rep.js"></script>
 </body>
 </html>
