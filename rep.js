@@ -33,6 +33,8 @@ btn.addEventListener('click',function(){
 
     if(formnumber==formLength){
         navigation.children[1].style.display="none"
+        loadSummary()
+        
         navigation.children[2].style.display="inline-block"
         
     }
