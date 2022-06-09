@@ -495,3 +495,18 @@ display:inline-flex; flex-direction: row;
     height: 80px;
     margin-left: 350px;
 }
+.img-fluid1 {
+    width: 400px;
+    height: 200px;
+    display: list-item;
+}
+.img-fluid2 {
+    width: 400px;
+    height: 200px;
+    display: list-item;
+}
+.img-fluid3 {
+    width: 400px;
+    height: 200px;
+    display: list-item;
+}
