@@ -11,15 +11,12 @@ let navigation = document.querySelectorAll(".button")[0];
 let formnumber=0;
 let formLength = main_page.length-1
 
-console.log(formLength)
-
-
-
 
 
 
 if(formnumber==0){
     navigation.children[0].style.display="none"
+    navigation.children[2].style.display="none"
 }
 
 next_click.forEach(function(btn){
@@ -30,14 +27,14 @@ btn.addEventListener('click',function(){
         formnumber++;
         if(formnumber>0){
             navigation.children[0].style.display="inline-block"
-        
+            
         }
     }
 
     if(formnumber==formLength){
-
-        navigation.children[1].innerHTML="Finish"
-
+        navigation.children[1].style.display="none"
+        navigation.children[2].style.display="inline-block"
+        
     }
     update_form();
     progress_forward();
@@ -50,12 +47,14 @@ btn.addEventListener('click',function(){
     if(formnumber>0){
         formnumber--
         navigation.children[0].style.display="inline-block"
-        navigation.children[1].innerHTML="Next"
+        navigation.children[1].style.display="inline-block"
+        navigation.children[2].style.display="none"
+        
     }
 
 
     if(formnumber==0){
-    navigation.children[0].style.display="none"
+        navigation.children[0].style.display="none"
     }
 
 
@@ -64,7 +63,7 @@ btn.addEventListener('click',function(){
 });
 });
 
-//
+
 
     
 // 
@@ -84,17 +83,18 @@ p_bar[formnumber].classList.add('active');
 }
 
 function progress_backward(){
-var f_num = formnumber+1;
-p_bar[f_num].classList.remove('active');
+    var f_num = formnumber+1;
+    p_bar[f_num].classList.remove('active');
 }
 
 
 
 function update_form(){
-main_page.forEach(function(main_pages){
-main_pages.classList.remove('active');
+    main_page.forEach(function(main_pages){
+    main_pages.classList.remove('active');
 });
-main_page[formnumber].classList.add('active');
+    console.log("adding class to element", formnumber)
+    main_page[formnumber].classList.add('active');
 }
 
 function validate_form(){
