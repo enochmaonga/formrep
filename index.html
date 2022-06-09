@@ -13,7 +13,7 @@
     <div class="container"> 
         <div class="card"> 
             <div class="saf">
-                
+                <h3>Repair Form</h3>
             </div> 
             <div class="form"> 
                 <div class="left-side"> 
@@ -30,56 +30,64 @@
                         <div class="main active">
                             <fieldset>
                                 <legend>Customer Details</legend>
-                                    <div >
+                                    <div class="input_div">
                                         <div class="input_text">
+                                            <input  type="text"  name="Name"  id="customerName" require required/>
                                             <label for="name">Name</label> 
-                                            <input  type="text"  name="Name"  id="customerName"/>
                                         </div>
-                                        <div class="input_text">
+                                    </div>
+
+                                    <div class="input_div"> 
+                                        <div class="input_text"> 
+                                            <input  type="text"  name="phone"  id="phone" require required/>
                                             <label for="phone">Phone</label> 
-                                            <input  type="text"  name="phone"  id="phone"/>
                                         </div>
                                         <div class="input_text">
-                                            <label for="email">email</label> 
-                                            <input  type="text"  name="email"  id="email"/>
+                                            <input  type="text"  name="email"  id="email" require required/>
+                                            <label for="email">Email</label> 
                                         </div>
-                                        <div class="input_text">
+                                    </div>
+
+                                    <div class="input_div"> 
+                                        <div class="input_text">  
+                                            <input  type="text"  name="national_id"  id="nationalID" require required/>
                                             <label for="nationalID">National ID</label> 
-                                            <input  type="text"  name="national_id"  id="nationalID"/>
                                         </div>       
-                                        <div class="input_text">
+                                        <div class="input_text" >
+                                            <input  type="text"  name="customer-altPhone"  id="customerAltPhone" require required/>
                                             <label for="customerAltPhone">Alternative Phone</label> 
-                                            <input  type="text"  name="customer-altPhone"  id="customerAltPhone"/>
                                         </div>
                                     </div>
                             </fieldset>
                         </div>
 
                         <div class="main"> 
-
-                            
+    
                             <fieldset>
                                 <legend>Device Details</legend>
-                                <div>
+                                <div class="input_div">
                                     <div class="input_text">
+                                        <input type="text" name="brand" id="brand" require required/>
                                         <label for="brand">Brand</label> 
-                                        <input type="text" name="brand" id="brand" />
                                     </div>
                             
                                     <div class="input_text">
+                                        <input type="text" name="model" id="model" require required/>
                                         <label for="model">Model</label> 
-                                        <input type="text" name="model" id="model" />
                                     </div>
-                            
+                                </div>
+                                <div class="input_div">
                                     <div class="input_text">
+                                        <input type="text" name="serial" id="serial" require required/>
                                         <label for="serial">Serial/IMEI</label> 
-                                        <input type="text" name="serial" id="serial" />
                                     </div>
                             
                                     <div class="input_text">
+                                        <input type="text" name="receipt" id="receipt"  require required/>
                                         <label for="receipt">Receipt</label> 
-                                        <input type="text" name="receipt" id="receipt"  />
                                     </div>
+                                </div>
+                                    
                             
                                     <fieldset>
                                         <legend>Accessories</legend>
@@ -96,23 +104,25 @@
                                             </ul> 
                                         </div>
                                     </fieldset>
-                            
-                                    <div>
-                                        <label for="lipaMdogoMdogo">Lipa Mdogomdogo</label>
-                                        <input type="checkbox"  name="lipaMdogoMdogo" id="lipaMdogoMdogo" value="true"/>
-                                    </div>
-                            
-                                    <div >
-                                        <label>Warranty</label>
-                                        <input type="checkbox"  name="warranty" id="warranty" value="true"/>
-                                    </div>
-                            
-                                    <div>
-                                        <label>Repair History</label>
-                                        <input type="checkbox"  name="repairHistory" id="repairHistory" value="true"/>
-                                    </div>
-                                                
-                                </div>
+                                
+                                    <fieldset>
+                                        <legend>Other</legend>
+                                        <div>
+                                            <label for="lipaMdogoMdogo">Lipa Mdogomdogo</label>
+                                            <input type="checkbox"  name="lipaMdogoMdogo" id="lipaMdogoMdogo" value="true"/>
+                                        </div>
+                                
+                                        <div >
+                                            <label>Warranty</label>
+                                            <input type="checkbox"  name="warranty" id="warranty" value="true"/>
+                                        </div>
+                                
+                                        <div>
+                                            <label>Repair History</label>
+                                            <input type="checkbox"  name="repairHistory" id="repairHistory" value="true"/>
+                                        </div>
+                                    </fieldset>           
+
                             </fieldset>
                         
                         </div>                   
@@ -120,7 +130,8 @@
                         <div class="main "> 
                             
                             <fieldset id="Issue">
-                                <legend>Device Faults</legend>               
+                                <legend>Device Faults</legend>   
+
                                 <fieldset id="display">
                                     <legend>Display</legend>
                                     <div>
@@ -140,6 +151,7 @@
                                         </ul>
                                     </div>
                                 </fieldset>
+
                                 <fieldset id="power">
                                     <legend>Power</legend>
                                     <div>
@@ -160,6 +172,7 @@
                                     </div>
                             
                                 </fieldset>
+
                                 <fieldset id="speaker">
                                     <legend>Speaker</legend>
                                         <div>
@@ -240,6 +253,7 @@
                                             </ul>
                                         </div>                 
                                 </fieldset>
+
                             </fieldset>
                         </div>
                     
@@ -253,14 +267,17 @@
                                                
                                 <fieldset>
                                     <legend>Stand by unit details</legend>
-                                    <div class="input_text">
-                                        <label>Brand</label>
-                                        <input type="text"  name="standByUnitBrand" id="standByUnitBrand"/>
+                                    <div class="input_div">
+                                        <div class="input_text">
+                                            <input type="text"  name="standByUnitBrand" id="standByUnitBrand" require required/>
+                                            <label>Brand</label>
+                                        </div>
+                                        <div class="input_text">
+                                            <input type="text"  name="standByUnitSerial" id="standByUnitSerial" require required/>
+                                            <label>Model</label>
+                                        </div>
                                     </div>
-                                    <div class="input_text">
-                                        <label>Model</label>
-                                        <input type="text"  name="standByUnitSerial" id="standByUnitSerial" />
-                                    </div>
+                                    
                                 </fieldset>
                             </fieldset>
                         </div>
@@ -270,7 +287,7 @@
                                 <legend>Repair Center Details</legend>         
                                 <div>
                                     <label for="repair_center">Repair Center</label> 
-                                    <select name="repair_center" placeholder="Rpair Center Name" id="repair_center">
+                                    <select name="repair_center" id="repair_center">
                                         <option value="Nokia">Nokia</option>
                                         <option value="Samsung">Samsung</option>
                                     </select>
@@ -291,19 +308,176 @@
                             </fieldset>
                         </div>
 
-                        <div class="main "> 
-                            <div class="manage"> 
-                                <h3>Congratulations <span class="shown_name"></span></h3> 
-                                <p>Form has been successfully submitted</p> 
-                            </div> 
-                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> 
-                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" /> 
-                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" /> 
-                            </svg> 
+                        <div class="main scroll"> 
+                            
+                            <div>
+                                <h5>Customer Details</h5>
+                                <dl>
+                                    <dt>Name </dt>
+                                    <dd>Geoffrey Odari</dd>
+                                    <dt>Phone </dt>
+                                    <dd>0721516725</dd>
+                                    <dt>Email</dt>
+                                    <dd>geoffrey@email.com</dd>
+                                    <dt>National Identity</dt>
+                                    <dd>0721516725</dd>
+                                    <dt>Alternative phone</dt>
+                                    <dd>0721516725</dd>
+                                </dl>
+                            </div>
+                        
+                            <div>
+                                <h5>Device Details</h5>
+                                <dl>
+                                    <dt>Brand</dt>
+                                    <dd>Nokia</dd>
+                                    <dt>Model</dt>
+                                    <dd>C9</dd>
+                                    <dt>Serial</dt>
+                                    <dd>3333frtttt</dd>
+                                    <dt>Receipt</dt>
+                                    <dd>0721516725</dd>
+                                    <dt>Alternative phone</dt>
+                                    <dd>0721516725</dd>
+                                    <dt>Accessories</dt>
+                                    <dd>
+                                        <dl>
+                                            <dt>Battery</dt>
+                                            <dd>Yes</dd>
+                                            <dt>Charger</dt>
+                                            <dd>No</dd>
+                                        </dl>
+                                    </dd>
+                                    <dt>Lipa Mdogo Mdogo</dt>
+                                    <dd>Yes</dd>
+                                    <dt>Warranty</dt>
+                                    <dd>Yes</dd>
+                                    <dt>Repair History</dt>
+                                    <dd>Yes</dd>
+                                    <dt>Warranty</dt>
+                                    <dd>Yes</dd>
+                                </dl>
+                            </div>
+                            
+                            <div>
+                                <h5>Stand by unit</h5>
+                                <dl>
+                                    <dt>Standby unit issued</dt>
+                                    <dd>Yes</dd>
+                                    <dt>Standby unit Details</dt>
+                                    <dd>
+                                        <dl>
+                                            <dt>Brand</dt>
+                                            <dd>Nokia</dd>
+                                            <dt>Model</dt>
+                                            <dd>C9</dd>
+                                            <dt>Serial</dt>
+                                            <dd>6214636772</dd>
+                                        </dl>
+                                    </dd>
+                                </dl>
+                            </div>
+                        
+                            <div>
+                                <h5>Device Faults</h5>
+                        
+                                <dl>
+                                    <dt>Display</dt>
+                                    <dd>
+                                        <dl>
+                                            <dt>Cracked</dt>
+                                            <dd>Yes</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Not Powering Up</dt>
+                                            <dd>Yes</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>No touch</dt>
+                                            <dd>Yes</dd>
+                                        </dl>
+                                    </dd>
+                                    <dt>Power</dt>
+                                    <dd>
+                                        <dl>
+                                            <dt>Not powering up</dt>
+                                            <dd>Yes</dd>
+                                            <dt>Short Battery life</dt>
+                                            <dd>Yes</dd>
+                                            <dt>Not charging</dt>
+                                            <dd>Yes</dd>
+                                        </dl>
+                                    </dd>
+                                    <dt>Speaker</dt>
+                                    <dd>
+                                        <dl>
+                                            <dt>No sound</dt>
+                                            <dd>Yes</dd>
+                                            <dt>Distorted sound</dt>
+                                            <dd>Yes</dd>
+                                            <dt>Not ringing</dt>
+                                            <dd>Yes</dd>
+                                        </dl>
+                                    </dd>
+                                    <dt>Network</dt>
+                                    <dd>
+                                        <dl>
+                                            <dt>No Mobile Network</dt>
+                                            <dd>Yes</dd>
+                                            <dt>No Wifi</dt>
+                                            <dd>Yes</dd>
+                                            <dt>Dropping Calls</dt>
+                                            <dd>Yes</dd>
+                                            <dt>Unable to make calls</dt>
+                                            <dd>Yes</dd>
+                                        </dl>
+                                    </dd>
+                                    <dt>Physical Damage</dt>
+                                    <dd>
+                                        <dl>
+                                            <dt>Faulty Keys</td>
+                                            <dd>Yes</dd>
+                                            <dt>Cracked Body</dt>
+                                            <dd>Yes</dd>
+                                        </dl>
+                                    </dd>
+                                    <dt>Software</dt>
+                                    <dd>
+                                        <dl>
+                                            <dt>Slow</dt>
+                                            <dd>Yes</dd>
+                                            <dt>Crashing</dt>
+                                            <dd>Yes</dd>
+                                            <dt>Hanging</dt>
+                                            <dd>Yes</dd>
+                                        </dl>
+                                    </dd>
+                                </dl>
+                            </div>
+                        
+                            <div>
+                                
+                                <dl>
+                                    <dt>Retail Centre</dt>
+                                    <dd>JKIA</dd>
+                                </dl>
+                            </div>
+                        
+                            <div>
+                                
+                                <dl>
+                                    <dt>Repair Centre</dt>
+                                    <dd>Nokia Center Nairobi</dd>
+                                </dl>
+                            </div>
+                        
+                                
+                             
+                          
                             
                         </div>
                         
-                        <div class="button step_2 step_3"> 
+                        <div class="button step_2"> 
                             <button class="prev_btn">Previous</button> 
                             <button class="next_btn">Next</button> 
                         </div> 

@@ -9,7 +9,7 @@ var shown_contact=document.querySelector(".shown_contact");
 let navigation = document.querySelectorAll(".button")[0];
 
 let formnumber=0;
-let formLength = main_page.length
+let formLength = main_page.length-1
 
 console.log(formLength)
 
@@ -34,7 +34,7 @@ btn.addEventListener('click',function(){
         }
     }
 
-    if(formnumber==formLength-1){
+    if(formnumber==formLength){
 
         navigation.children[1].innerHTML="Finish"
 
@@ -111,7 +111,6 @@ inpt.classList.add('warning');
 });
 return validate;
 }
-
 
 
  
