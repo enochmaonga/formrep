@@ -169,7 +169,10 @@ body {
     position: relative;
     width: 100%
 }
-
+.input_password {
+    position: relative;
+    width: 100%
+}
 input[type="text"] {
     height: 45px;
     width: 100%;
@@ -497,7 +500,7 @@ display:inline-flex; flex-direction: row;
 }
 .img-fluid1 {
     width: 400px;
-    height: 200px;
+    height: 300px;
     display: list-item;
 }
 .img-fluid2 {
@@ -514,6 +517,17 @@ display:inline-flex; flex-direction: row;
     width: 100px;
     height: 50px;
 }
-.form {
-    
+.form-control-lg {
+    display:inline;
+    float:right;
+    padding-right: 10px;
+    width: 50%;
+}
+.vh-100 {
+    width: 50%;
+    display: inline;
+}
+ 
+.card {
+    background-image:url(/resources/MobileRepair2.png);
 }
